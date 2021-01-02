@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const BackgroundImage = styled.ImageBackground`
   flex: 1;
@@ -19,7 +20,7 @@ export const Title = styled.Text`
   font-family: 'Poppins-Regular';
 `;
 
-export const NavigationButton = styled.TouchableOpacity`
+export const NavigationButton = styled(RectButton)`
   background: #ffb84d;
   border-radius: 8px;
   flex-direction: row;
